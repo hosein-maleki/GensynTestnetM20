@@ -696,7 +696,7 @@ fi
 # Apply sed command for max_steps before Hugging Face prompt
 echo -e "${CYAN}${BOLD}[✓] Updating max_steps in config file...${NC}"
 cd
-sed -i 's/max_steps: [0-9]\+/max_steps: 3/' rl-swarm/hivemind_exp/configs/mac/grpo-qwen-2.5-0.5b-deepseek-r1.yaml
+sed -i 's/max_steps: [0-9]\+/max_steps: 20/' rl-swarm/hivemind_exp/configs/mac/grpo-qwen-2.5-0.5b-deepseek-r1.yaml
 cd $ROOT
 
 if [ -n "${HF_TOKEN}" ]; then
@@ -760,7 +760,7 @@ fi
 # Apply sed command for max_steps at the end
 echo -e "${CYAN}${BOLD}[✓] Updating max_steps in config file...${NC}"
 cd
-sed -i 's/max_steps: [0-9]\+/max_steps: 3/' rl-swarm/hivemind_exp/configs/mac/grpo-qwen-2.5-0.5b-deepseek-r1.yaml
+sed -i 's/max_steps: [0-9]\+/max_steps: 20/' rl-swarm/hivemind_exp/configs/mac/grpo-qwen-2.5-0.5b-deepseek-r1.yaml
 cd $ROOT
 
 if [ -n "$ORG_ID" ]; then
